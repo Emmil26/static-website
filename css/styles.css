@@ -4,7 +4,16 @@ body {
 }
 
 h1,
-h2,
+h2 {
+  color: white;
+}
+
 p {
   color: white;
+  font-size: auto;
+}
+
+#my-avatar {
+  width: 150px;
+  border-radius: 50%;
 }
