@@ -1,19 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap');
 
 body {
-  background-color: black;
+  background-color: #4C0033;
   font-family: 'Poppins', sans-serif;
-}
-
-h1,
-h2 {
-  color: white;
-  
-}
-
-p {
-  color: white;
-  font-size: auto;
+  color: #E80F88;
 }
 
 #my-avatar {
