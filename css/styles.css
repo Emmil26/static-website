@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Kalam&family=Poppins&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #4C0033;
   font-family: 'Cinzel', serif;
@@ -18,4 +24,31 @@ body {
 
 #content {
   text-align: center;
+}
+
+header {
+  display: flex;
+}
+
+nav {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #E80F88;
+  border-bottom: 1px dotted white;
+}
+
+#right-side {
+  width: 50%;
+  margin-left: 80%;
+  float: right;
+  padding: 10px;
+}
+
+#left-side {
+  width: 50%;
+  float: left;
+  padding: 10px;
 }
