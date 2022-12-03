@@ -1,19 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap');
+
 body {
   background-color: black;
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1,
 h2 {
   color: white;
+  
 }
 
 p {
   color: white;
   font-size: auto;
+  font-family: 'Kalam', cursive;
 }
 
 #my-avatar {
   width: 150px;
   border-radius: 50%;
+  margin: 20px;
+}
+
+#content {
+  text-align: center;
 }
