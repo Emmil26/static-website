@@ -48,7 +48,12 @@ a {
 }
 
 #left-side {
-  width: 50%;
-  float: left;
+  width: 56%;
+  display: inline-block;
+  text-align: left;
   padding: 10px;
+}
+
+.nav-link {
+  margin-left: 8px;
 }
