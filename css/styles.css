@@ -6,10 +6,12 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   background-color: #4C0033;
   font-family: 'Cinzel', serif;
   color: #E80F88;
+  height: 100vh;
+  width: 100vw;
 }
 
 #my-avatar {
@@ -37,7 +39,10 @@ nav {
 a {
   text-decoration: none;
   color: #E80F88;
-  border-bottom: 1px dotted white;
+}
+
+header {
+  margin-top: 16px;
 }
 
 #right-side {
@@ -45,6 +50,19 @@ a {
   margin-left: 80%;
   float: right;
   padding: 10px;
+  border-bottom: 0 solid #E80F88;
+  animation: 2s;
+  width: auto;
+}
+
+#right-side:hover {
+  border-bottom: 1px solid #E80F88;
+  animation: 2s;
+}
+
+#right-side::after {
+  border-bottom: 1px solid #E80F88;
+  animation: 2s;
 }
 
 #left-side {
@@ -52,8 +70,26 @@ a {
   display: inline-block;
   text-align: left;
   padding: 10px;
+  width: auto;
+}
+
+#left-side:hover {
+  border-bottom: 1px solid #E80F88;
+  animation: 2s;
+}
+
+#left-side::after {
+  border-bottom: 1px solid #E80F88;
+  animation: 2s;
 }
 
 .nav-link {
   margin-left: 8px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
