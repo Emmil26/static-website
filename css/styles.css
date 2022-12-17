@@ -10,9 +10,9 @@ html, body {
   background-color: #4C0033;
   font-family: 'Cinzel', serif;
   color: #E80F88;
-  width: auto;
-  height: 100%;
-
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 #my-avatar {
@@ -27,6 +27,7 @@ html, body {
 
 #content {
   text-align: center;
+  height: 100%;
 }
 
 header {
@@ -39,71 +40,36 @@ nav {
 
 a {
   text-decoration: none;
+  border-bottom: 1px dotted #E80F88;
   color: #E80F88;
 }
 
-header {
-  margin-top: 16px;
-}
-
-.nav-link1, .nav-link2 {
-  border-bottom: 0 solid #E80F88;
-  animation: 2s;
-  width: auto;
-}
-
 #right-side {
-  width: 50%;
-  float: right;
-  margin-left: 80%;
-}
-
-#right-side:hover {
-  border-bottom: 1px solid #E80F88;
-  animation: 2s;
-}
-
-#right-side::after {
-  border-bottom: 1px solid #E80F88;
-  animation: 2s;
+ position: absolute;
+ top: 16px;
+ right: 16px;
 }
 
 #left-side {
-  width: 50%;
-  float: left;
-  margin-left: 20px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
 }
 
-
-.nav-link1:hover, .nav-link2:hover {
-  border-bottom: 1px solid #E80F88;
-  animation: 2s;
-}
-
-
-.nav-link1::after, .nav-link2::after {
-  border-bottom: 1px solid #E80F88;
-  animation: 2s;
-}
-
-.nav-link {
-  margin-left: 8px;
+#left-side a {
+  margin-right: 16px;
 }
 
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
+  padding-bottom: 15px; 
 }
 
 footer a:first-child {
   margin-right: 16px;
-}
-
-.footer1:hover, .footer2:hover {
-  border-bottom: 1px solid #E80F88;
-  animation: 2s;
 }
 
 #content div {
