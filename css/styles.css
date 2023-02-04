@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Kalam&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap');
 
 * {
   padding: 0;
@@ -8,7 +8,7 @@
 
 html, body {
   background: linear-gradient(160deg, #bdc3c7, #000000 );
-  font-family: 'Cinzel', serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   width: 100%;
   height: 100vh;
@@ -27,20 +27,18 @@ html, body {
 
 #content {
   text-align: center;
-  height: 100%;
 }
 
-
 a {
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   border-bottom: 1px dotted black;
   color: white;
 }
 
-
 footer {
   position: absolute;
-  bottom: 16px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   padding-bottom: 15px; 
@@ -78,10 +76,9 @@ h3 {
   margin-top: 10px;
 }
 
-/* For v2.0 */
-
+/* For */
 header {
-  margin-top: 16px;
+  padding-top: 10px;
 }
 
 header > nav{
@@ -89,4 +86,14 @@ header > nav{
   justify-content: space-evenly;
 }
 
-/* nonde eader */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+footer > a > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
