@@ -30,6 +30,20 @@ html, body {
   height: 100%;
 }
 
+#left-side {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+#left-side > a {
+  margin-right: 16px;
+}
+
+#right-side {
+  position: absolute;
+  top: 16px;
+  right: 16px;   
+}
 
 a {
   text-decoration: none;
@@ -78,7 +92,7 @@ h3 {
   margin-top: 10px;
 }
 
-/* For v2.0 */
+/* For v2.0
 
 header {
   padding-top: 18px;
@@ -86,7 +100,7 @@ header {
 
 header > nav{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly;  
 }
 
 footer {
@@ -100,4 +114,4 @@ footer > a > svg {
   height: 24px;
   margin-right: 8px;
   fill: white;
-}
+} */
