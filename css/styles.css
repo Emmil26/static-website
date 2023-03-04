@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 
-html, body {
-  background: linear-gradient(160deg, #bdc3c7, #000000 );
+html,
+body {
+  background: linear-gradient(160deg, #bdc3c7, #000000);
   font-family: 'Poppins', sans-serif;
   color: white;
   width: 100%;
@@ -47,21 +48,6 @@ footer a:first-child {
   margin-right: 16px;
 }
 
-#left-side {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-}
-#left-side > a {
-  margin-right: 16px;
-}
-
-#right-side {
-  position: absolute;
-  top: 16px;
-  right: 16px;   
-}
-
 #content div {
   width: 60%;
   position: absolute;
@@ -72,15 +58,15 @@ footer a:first-child {
 
 /* hero banner */
 #hero-banner {
-  background: linear-gradient(90deg, #f869d5, #5650de );
+  background: linear-gradient(90deg, #f869d5, #5650de);
 }
 
-#hero-banner > div {
+#hero-banner>div {
   width: 50%;
   margin: 0 auto;
 }
 
-#hero-banner > div > div {
+#hero-banner>div>div {
   display: inline-block;
 }
 
@@ -91,11 +77,11 @@ h3 {
 }
 
 /* For */
-/* header {
+header {
   padding-top: 10px;
 }
 
-header > nav{
+header>nav {
   display: flex;
   justify-content: space-evenly;
 }
@@ -106,9 +92,10 @@ footer {
   width: 100%;
 }
 
-footer > a > img {
+footer>a>img {
   width: 24px;
   height: 24px;
   margin-right: 8px;
-} */
- /* for 2.0 */
+}
+
+/* for 2.0 */
