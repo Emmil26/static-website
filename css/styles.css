@@ -19,7 +19,6 @@ body {
 #my-avatar {
   width: 150px;
   border-radius: 50%;
-  margin: 20px;
 }
 
 #my-name {
@@ -36,23 +35,24 @@ a {
   color: white;
 }
 
-/* footer {
+footer {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-} */
+}
 
 footer a:first-child {
   margin-right: 16px;
 }
 
 #content div {
-  width: 60%;
+  width: 100vw; /* vw -> viewport width */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 16px;
 }
 
 /* hero banner */
@@ -61,12 +61,22 @@ footer a:first-child {
 }
 
 #hero-banner>div {
-  width: 50%;
-  margin: 0 auto;
+  width: 100vw;
+  display: flex;
+  column-gap: 16px;
+  padding: 16px;
 }
 
 #hero-banner>div>div {
   display: inline-block;
+}
+
+#hero-banner h1 {
+  font-size: 1.3rem;
+}
+
+#hero-banner h2 {
+  font-size: 1rem;
 }
 
 h3 {
@@ -76,29 +86,24 @@ h3 {
 }
 
 /* For */
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 16px;
-}
-
-
-/* header>nav {
-  display: flex;
-  justify-content: space-evenly;
-} */
-
-footer {
-  display: flex;
-  justify-content: space-evenly;
+header>nav{
   width: 100%;
 }
 
-footer>a>img {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+#left {
+  float: left;
+  padding-right: 10px;
+}
+
+#right {
+  float: right;
 }
 
 footer {
@@ -110,5 +115,9 @@ footer {
 footer > section {
   display: flex;
   justify-content: space-around;
+}
+
+i {
+  padding: 5px;
 }
 /* for 2.0 */
