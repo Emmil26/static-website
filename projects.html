@@ -22,10 +22,6 @@
         object-fit: cover;
       }
 
-      footer {
-        position: initial;
-      }
-
       p.description {
         padding: 16px;
       }
@@ -45,6 +41,23 @@
 
       ul.techs > li:not(:last-child)::after {
         content: ", ";
+      }
+
+      footer {
+        position: initial;
+      }
+
+      @media (min-width: 426px) and (max-width: 768px) {
+        section#projects {
+          display: flex;
+          flex-direction: row;
+          flex-basis: 50%;
+          flex-wrap: wrap;
+        }
+      }
+
+      section.project {
+        width: 49%;
       }
     </style>
     <title>Emmil Leo Marcelo-Projects</title>
@@ -80,7 +93,7 @@
     </section>
     <h3>Projects</h3>
     <section id="projects">
-      <section id="project">
+      <section class="project">
         <img
           src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="a placeholder image for a project"
@@ -98,9 +111,7 @@
           nostrum nemo rem quisquam.
         </p>
       </section>
-    </section>
-    <section id="projects">
-      <section id="project">
+      <section class="project">
         <img
           src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="a placeholder image for a project"
@@ -118,9 +129,7 @@
           nostrum nemo rem quisquam.
         </p>
       </section>
-    </section>
-    <section id="projects">
-      <section id="project">
+      <section class="project">
         <img
           src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="a placeholder image for a project"
@@ -138,9 +147,25 @@
           nostrum nemo rem quisquam.
         </p>
       </section>
-    </section>
-    <section id="projects">
-      <section id="project">
+      <section class="project">
+        <img
+          src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="a placeholder image for a project"
+        />
+        <h3>Projects 1</h3>
+        <ul class="techs">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+          reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+          nostrum nemo rem quisquam.
+        </p>
+      </section>
+      <section class="project">
         <img
           src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="a placeholder image for a project"
