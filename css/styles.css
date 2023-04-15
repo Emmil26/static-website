@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 
-html, body {
-  background: linear-gradient(160deg, #bdc3c7, #000000 );
+html,
+body {
+  background: linear-gradient(160deg, #bdc3c7, #000000);
   font-family: 'Poppins', sans-serif;
   color: white;
   width: 100%;
@@ -15,103 +16,86 @@ html, body {
   position: relative;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+
 #my-avatar {
   width: 150px;
   border-radius: 50%;
-  margin: 20px;
 }
 
 #my-name {
   font-family: 'Kalam', cursive;
 }
 
-#content {
-  text-align: center;
-  height: 100%;
-}
-
 #left-side {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-}
-#left-side > a {
-  margin-right: 16px;
-}
-
-#right-side {
-  position: absolute;
-  top: 16px;
-  right: 16px;  
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
 }
 
 a {
+  color: #5c2e7e;
   text-decoration: none;
-  border-bottom: 1px dotted black;
-  color: white;
 }
-
 
 footer {
   position: absolute;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-bottom: 15px; 
+  bottom: 0;
+  width: 100vw; /* vw -> viewport width */
+  padding: 16px;
 }
-
-footer a:first-child {
-  margin-right: 16px;
+footer > section {
+  display: flex;
+  justify-content: space-around;
 }
 
 #content div {
-  width: 60%;
+  width: 100vw; /* vw -> viewport width */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 16px;
 }
 
-/* hero banner */
+/* Projects page */
+
 #hero-banner {
-  background: linear-gradient(90deg, #f869d5, #5650de );
+  background: linear-gradient(150deg, red, blue, magenta);
 }
-
 #hero-banner > div {
-  width: 50%;
-  margin: 0 auto;
+  width: 100vw; /* vw -> viewport width */
+  display: flex;
+  column-gap: 16px;
+  padding: 16px;
+justify-content: center;
+align-items: center;
 }
 
-#hero-banner > div > div {
-  display: inline-block;
+@media (min-width: 426px) and (max-width: 768px) {
+  #hero-banner > div {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
+#hero-banner h1,
+#hero-banner h2 {
+  color: white;
+}
+#hero-banner h1 {
+  font-size: 2rem; /* 1rem -> 16px */
+}
+#hero-banner h2 {
+  font-size: 1.1rem; /* customize this value to align the text in single row */
+}
 h3 {
   text-align: center;
   font-size: 32px;
-  margin-top: 10px;
-}
-
-/* For v2.0
-
-header {
-  padding-top: 18px;
-}
-
-header > nav{
-  display: flex;
-  justify-content: space-evenly;  
-}
-
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-footer > a > svg {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  fill: white;
-} */
+} 

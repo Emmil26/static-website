@@ -1,45 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Emmil Leo Marcelo-Projects</title>
-  </head>
-  <body>
-    <header>
-      <section id="left-side">
-        <nav>
-          <a href="./index.html">Home</a>
-          <a href="./projects.html">Projects</a>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      height: auto;
+    }
+
+    section.project>img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    p.description {
+      padding: 16px;
+    }
+
+    ul.techs {
+      list-style: none;
+      text-align: center;
+    }
+
+    ul.techs::before {
+      content: "Made with: ";
+    }
+
+    ul.techs>li {
+      display: inline-block;
+    }
+
+    ul.techs>li:not(:last-child)::after {
+      content: ", ";
+    }
+
+    footer {
+      position: initial;
+    }
+
+    /* tablet device */
+    @media (min-width: 578px) and (max-width: 768px) {
+      section#projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 2%;
+        row-gap: 16px;
+      }
+
+      section.project {
+        width: 49%;
+      }
+    }
+
+    /* laptop device */
+    @media (min-width: 769px) {
+      section#projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 2%;
+        row-gap: 16px;
+      }
+
+      section.project {
+        width: 32%;
+      }
+    }
+
+    /* large laptop device */
+    @media (min-width: 1024px) {
+
+      /* section#projects {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          column-gap: 1%;
+          row-gap: 16px;
+        } */
+      section.project {
+        width: 23.5%;
+      }
+    }
+
+    /* 4k */
+    @media (min-width: 2560px) {
+
+      /* section#projects {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          column-gap: 1%;
+          row-gap: 16px;
+        } */
+      #projects {
+        margin: 0 15%;
+      }
+
+      section.project {
+        width: 18.4%;
+      }
+    }
+  </style>
+  <title>Emmil Leo Marcelo-Projects</title>
+</head>
+
+<body>
+  <header>
+    <nav id="left-side">
+      <a id="left" class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i>Home</a>
+      <a id="left" class="nav-link" href="./projects.html"><i class="fa-solid fa-folder-tree"></i>Projects</a>
+    </nav>
+    <nav id="right-side">
+      <a id="right" class="nav-link2" href="https://github.com/Emmil26"><i class="fa-brands fa-github"></i>Github</a>
+    </nav>
+  </header>
+  <section id="hero-banner">
+    <div>
+      <section>
+        <img id="my-avatar" src="./images/me.jpg" alt="This is my amazing avatar." />
       </section>
-      <section id="right-side">
-        <nav>
-          <a href="https://github.com/Emmil26">GitHub Profile</a>
-        </nav>
-      </section>
-    </header>
-    <section id="hero-banner">
-      <div>
-        <img
-          id="my-avatar"
-          src="./images/me.jpg"
-          alt="This is my amazing avatar."
-        />
-        <h1 id="my-name">Emmil Leo Marcelo</h1>
+      <section>
+        <h1 id="my-name">Emmil Marcelo</h1>
         <h2>Junior Web Developer</h2>
-      </div>
+      </section>
+    </div>
+  </section>
+  <h3>Projects</h3>
+  <section id="projects">
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 1</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
     </section>
-    <h3>Projects</h3>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 2</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 3</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 4</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 5</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 6</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 7</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 8</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 9</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
+    <section class="project">
+      <img
+        src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="a placeholder image for a project" />
+      <h3>Projects 10</h3>
+      <ul class="techs">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+        facilis, vitae odio iste ipsa, soluta iure praesentium impedit
+        reiciendis vero porro ipsum suscipit sequi voluptas perspiciatis
+        nostrum nemo rem quisquam.
+      </p>
+    </section>
     <footer>
-      <a class="footer1" href="https://www.linkedin.com/in/emmilleo/"
-        >LinkedIn</a
-      >
-      <a class="footer2" href="https://www.freecodecamp.org/Emmil26"
-        >FreeCodeCamp</a
-      >
+      <section>
+        <a class="footer1" href="https://www.linkedin.com/in/emmilleo/"><i class="fa-brands fa-linkedin"></i>
+          LinkedIn</a>
+        <a class="footer2" href="https://www.freecodecamp.org/Emmil26"><i class="fa-brands fa-free-code-camp"></i>
+          freeCodeCamp</a>
+      </section>
     </footer>
-  </body>
+</body>
+
 </html>
